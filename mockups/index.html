@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GSage</title>
+<link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
+</head>
+
+<body> 
+
+<div class="container">
+  <div id="sidebar">
+    <div id="title">
+     <h1>GSage</h1>
+    </div>
+    <div id="project">
+     <h3>Project: </h3>
+     <h3>LSST</h3>
+    </div>
+    <h4>Manage Infrastructure</h4>
+    <h4>Manage Endpoints</h4>
+    <h4>Manage User</h4>
+  </div>  
+  <div id="main_content">
+    <div class="topbar">
+      <div id="user_info" class="pull-right">
+            Logged in as: demo user
+      </div>  
+    </div>  
+	<div class="page-header">
+	<h1>Overview</h1>
+    </div>
+    <div id="map-canvas">Google Map goes here</div>
+  </div>
+</div>  
+	
+      
+<div id="footer">
+       <img src="images/UW.Signature_left.jpg" class="footer_image" />
+</div>      
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 4,
+    center: new google.maps.LatLng(38,-90),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+</body>
+</html>
