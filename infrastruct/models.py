@@ -9,6 +9,7 @@ class Infrastructure(models.Model):
     url = models.CharField(max_length=256)
     username = models.CharField(max_length=32)
     pw = models.CharField(max_length=32)
+    name = models.CharField(max_length=256)
     
 class Endpoint(models.Model):
     inf = models.ForeignKey(Infrastructure)
