@@ -9,8 +9,8 @@
 
 <div class="container">
   <div id="sidebar">
-    <div id="title">
-     <h1>GSage</h1>
+    <div id="logo">
+     GSage
     </div>
     <div id="project">
      <h3>Project: </h3>
@@ -25,6 +25,7 @@
       <div id="user_info" class="pull-right">
             Logged in as: demo user
       </div>  
+      
     </div>  
 	<div class="page-header">
 	<h1>Overview</h1>
@@ -46,7 +47,7 @@ var map;
 function initialize() {
   var mapOptions = {
     zoom: 4,
-    center: new google.maps.LatLng(38,-90),
+    center: new google.maps.LatLng(38,-94),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),

@@ -8,66 +8,12 @@ html {
 }
 
 body {
-        font-family:Arial,Helvetica,sans-serif !important;
-	/*
- 	background: -webkit-gradient(linear, left top, left bottom, from(#6E4E2B), to(#ffffff));
-        background: -moz-gradient(linear, left top, left bottom, from(#6E4E2B), to(#ffffff));
-	*/
-	background: silver;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #333333;
 }
-
-div#upload {
-	vertical-align: top;
-}
-
-div.title {
-		font: Futura;
-		font-size: 2.5em;
-		 margin-right:20px;
-        margin-left:20px;
-        margin-top:12px;
-        margin-bottom:12px;
-		}
-
-
-
-  #map-canvas, #map_canvas {
-    height: 500px;
-    width: 750px;
-  }
-
-#panel {
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  margin-left: -180px;
-  z-index: 5;
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #999;
-}
-
-
-div.box2 {
-        border-radius:10px;
-        box-shadow: 5px 5px 5px #888;
-        -moz-box-shadow: 5px 5px 5px #888;
-        -webkit-box-shadow: 5px 5px 5px #888;
-        margin-right:20px;
-        margin-left:20px;
-        background-color:white;
-        min-height:400px;
-}
-
-div.main_page {
-        clear:both;
-        min-height:800px;
-        margin-left:26px;
-}
-
-div#footer {
-        text-align:center;
-}
+     
 
 h1, h2
 {
@@ -88,26 +34,6 @@ legend
 	color: #333;
 }
 
-#filedrag
-{
-	font-weight: bold;
-	text-align: center;
-	padding: 1em 0;
-	margin: 1em 0;
-	color: #555;
-	border: 2px dashed #555;
-	border-radius: 7px;
-	cursor: default;
-}
-
-#filedrag.hover
-{
-	color: #f00;
-	border-color: #f00;
-	border-style: solid;
-	box-shadow: inset 0 3px 4px #888;
-}
-
 img
 {
 	max-width: 100%;
@@ -126,56 +52,71 @@ pre
 	overflow: auto;
 }
 
-#messages
-{
-	padding: 0 10px;
-	margin: 1em 0;
-	border: 1px solid #999;
-}
 
-#progress p
-{
+
+#container {
 	display: block;
-	width: 240px;
-	padding: 2px 5px;
-	margin: 2px 0;
-	border: 1px inset #446;
-	border-radius: 5px;
-	background: #eee url("progress.png") 100% 0 repeat-y;
 }
 
-#progress p.success
-{
-	background: #0c0 none 0 0 no-repeat;
+
+#main_content {
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
-#progress p.failed
-{
-	background: #c00 none 0 0 no-repeat;
+#user_info {
+	color: #888888;
+	margin: auto 0;
 }
 
-div.title_2 
-{ 
-        font-style: bold;
-        font-size: 1.0em;
-	margin: 2px 2px .6em auto;
+
+
+.pull-right {
+	float: right;
 }
 
-div.value_2
-{
-        font-size: 1.0em;
+#sidebar {
+    background: #edf9ff;
+	border-right: 5px solid #e5e5e5;
+	border-bottom: 5px solid #e5e5e5;
+	float: left;
+	padding: 15px;
 }
 
-td#exp_info
-{
-	width="25%";
-	vertical-align: top;
 
+.page-header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: anivers;
+	border-bottom: 1px solid #eeeeee;
+	background: #f2f2f2;
 }
 
-span.handle_id{
-	font-size: 0.8em;
+#logo {
+	font-size: 5em;
+	color: #33AD33;
+    padding: 25px;
+	
 }
 
-#cytoscapeweb { width: 1000px; height: 800px; min-height: 600px;}
-#cytoscapeweb_topo { width: 1000px; height: 800px; min-height: 600px;}
+.main_nav {
+	list-style: none;
+	width: 222px;
+	margin: 10px 0 20px 0;
+}
+
+
+#topbar {
+     background: #f2f2f2;
+}
+
+#project {
+ 	background : #6fabc4;	
+ 	padding-left: 10px;
+ 	padding-bottom: 1px;
+}
+ 	
+#map-canvas {
+ 	height:	600px;
+ }
